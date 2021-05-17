@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace TeamSoftwareProject //This might need to be changed.
+namespace ConsoleApp_2
 {
     public class WildAnimal
     {
@@ -11,9 +13,14 @@ namespace TeamSoftwareProject //This might need to be changed.
         private string[] sounds = { "growls", "farts", "breaks a branch", "yawns", "snorts" };
 
         public WildAnimal(string animal)
-        {   
+        {
             //Initialization of animal
             this.animal = animal;
+        }
+
+        public override string ToString()
+        {
+            return this.animal;
         }
 
         public void hunt()
@@ -29,6 +36,7 @@ namespace TeamSoftwareProject //This might need to be changed.
                 this.weight += food;
                 Console.WriteLine(this.animal + " finds food, gains " + food + " kg and weighs now " + weight + " kg.");
             }
+
             else
             {
                 //Animal doesn't find food and weight doesn't change.
@@ -40,9 +48,8 @@ namespace TeamSoftwareProject //This might need to be changed.
         {
             //Animal makes one of the sounds in array "sounds".
             Random rnd = new Random();
-            string sound = sounds[rnd.Next( this.sounds.Length )];
+            string sound = sounds[rnd.Next(this.sounds.Length)];
             Console.WriteLine(animal + " " + sound + ".");
         }
-
     }
 }
