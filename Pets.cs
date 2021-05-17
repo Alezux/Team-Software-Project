@@ -5,6 +5,8 @@ namespace ConsoleApp_2
 {
     public class Pets
     {
+        //initialization of object attributes
+        // initialized with public because it is the parent class
         public string Animal { get; set; }
         public int weight { get; set; }
         public string Name { get; set; }
@@ -13,18 +15,18 @@ namespace ConsoleApp_2
         {
             this.Animal = animal;
         }
-
+        // virtual keyword because it'll be inherited and editted by child class
         public virtual void Givename(string Name)
         {
             this.Name = Name;
         }
-     
+
         public virtual void Eat()
         {
             //Random rnd = new Random();
             //int food = rnd.Next(4) + 1;
             this.weight += 1;
-            Console.WriteLine(this.Name + " ate, gains " + 1 + "kg and now weighs " + this.weight + " kg"  );
+            Console.WriteLine(this.Name + " ate, gains " + 1 + "kg and now weighs " + this.weight + " kg");
         }
         public virtual void TalkToOwner()
         {
@@ -34,8 +36,9 @@ namespace ConsoleApp_2
         {
             Console.WriteLine(this.Name + " came to owner.");
         }
-        
+
     }
+    // cat class inheriting from pets
     public class Cat : Pets
     {
 
@@ -44,6 +47,7 @@ namespace ConsoleApp_2
         {
 
         }
+        // override method to be able change how method works
         public override void Givename(string Name)
         {
             this.Name = Name;
@@ -51,9 +55,9 @@ namespace ConsoleApp_2
         }
         public override void TalkToOwner()
         {
-            Console.WriteLine(this.Name +" meowed at owner");
+            Console.WriteLine(this.Name + " meowed at owner");
         }
-        
+
     }
 }
 public class Dog : Pets
@@ -69,7 +73,7 @@ public class Dog : Pets
         this.Name = Name;
         Console.WriteLine(this.Animal + "'s name is now " + this.Name);
     }
-    
+
     public override void TalkToOwner()
     {
         Console.WriteLine(this.Name + " barked at owner");
