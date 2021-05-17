@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TeamSoftwareProject //This might need to be changed.
+namespace ConsoleApp_2 //This might need to be changed.
 {
     public class WildAnimal
     {
@@ -38,10 +38,15 @@ namespace TeamSoftwareProject //This might need to be changed.
 
         public void makeSound()
         {
-            //Animal makes one of the sounds in array "sounds".
+            //Animal makes one of the sounds from the array "sounds".
             Random rnd = new Random();
             string sound = sounds[rnd.Next( this.sounds.Length )];
             Console.WriteLine(animal + " " + sound + ".");
+        }
+
+        public override string ToString()
+        {
+            return this.animal;
         }
 
     }
