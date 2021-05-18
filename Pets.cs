@@ -15,6 +15,11 @@ namespace ConsoleApp_2
         {
             this.Animal = animal;
         }
+        public override string ToString()
+        {
+            return this.Animal;
+        }
+
         // virtual keyword because it'll be inherited and editted by child class
         public virtual void Givename(string Name)
         {
@@ -97,39 +102,3 @@ public class Bird : Pets
         Console.WriteLine(this.Name + " tweeted at owner");
     }
 }
-
-
-
-
-
-
-
-
-/*What do you want to do? [list, quit]
-> list
-List of animals:
-Wolf
-Tiger
-Bear
-Dog
-Dog
-Bird
-Which animal do you want to see?
-> Dog
-
-What do you want to do? [Eat, TalkToOwner, MakeSound, ComeHere, GiveName, back, quit]
-> ComeHere
-
-Dog came to the owner.
-What do you want to do? [Eat, TalkToOwner, MakeSound, ComeHere, GiveName, back, quit]
-> GiveName
-
-Give a name:
-> Garfield
-
-What do you want to do? [Eat, TalkToOwner, MakeSound, ComeHere, GiveName, back, quit]
-> Eat
-
-Garfield gained 1 kg, and weighs now 1 kg.
-What do you want to do? [list, quit]
-> quit*/
