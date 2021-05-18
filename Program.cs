@@ -90,7 +90,7 @@ namespace ConsoleApp_2
 
                                         else if (input4 == 3)
                                         {
-                                            //pets[input3 - 1].MakeSound();
+                                            pets[input3 - 1].MakeSound();
                                         }
 
                                         else if (input4 == 4)
@@ -100,7 +100,10 @@ namespace ConsoleApp_2
 
                                         else if (input4 == 5)
                                         {
-                                            //pets[input3 - 1].GiveName();
+                                            Console.WriteLine("\nGive name for " + pets[3 - 1] + "\n");
+                                            string name = Console.ReadLine();
+                                            Console.WriteLine();
+                                            pets[3 - 1].Givename(name);
                                         }
 
                                         else if (input4 == 6)

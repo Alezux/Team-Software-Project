@@ -11,13 +11,25 @@ namespace ConsoleApp_2
         public int weight { get; set; }
         public string Name { get; set; }
 
+        //Different sounds that animal can make.
+        private string[] sounds = { "growls", "farts", "breaks a branch", "yawns", "snorts" };
+
         public Pets(string animal)
         {
             this.Animal = animal;
+            this.Name = "";
         }
         public override string ToString()
         {
-            return this.Animal;
+            if (this.Name == "")
+            {
+                return this.Animal;
+            }
+
+            else
+            {
+                return this.Name;
+            }
         }
 
         // virtual keyword because it'll be inherited and editted by child class
@@ -31,17 +43,24 @@ namespace ConsoleApp_2
             //Random rnd = new Random();
             //int food = rnd.Next(4) + 1;
             this.weight += 1;
-            Console.WriteLine(this.Name + " ate, gains " + 1 + "kg and now weighs " + this.weight + " kg");
+            Console.WriteLine(this + " ate, gains " + 1 + "kg and now weighs " + this.weight + " kg");
         }
         public virtual void TalkToOwner()
         {
-            Console.WriteLine(this.Name + " talked to owner.");
+            Console.WriteLine(this + " talked to owner.");
         }
         public void ComeHere()
         {
-            Console.WriteLine(this.Name + " came to owner.");
+            Console.WriteLine(this + " came to owner.");
         }
 
+        public void MakeSound()
+        {
+            //Animal makes one of the sounds in array "sounds".
+            Random rnd = new Random();
+            string sound = sounds[rnd.Next(this.sounds.Length)];
+            Console.WriteLine("\n" + Animal + " " + sound + ".");
+        }
     }
     // cat class inheriting from pets
     public class Cat : Pets
@@ -56,11 +75,11 @@ namespace ConsoleApp_2
         public override void Givename(string Name)
         {
             this.Name = Name;
-            Console.WriteLine(this.Animal + "'s name is now " + this.Name);
+            Console.WriteLine(this.Animal + "'s name is now " + this);
         }
         public override void TalkToOwner()
         {
-            Console.WriteLine(this.Name + " meowed at owner");
+            Console.WriteLine(this + " meowed at owner");
         }
 
     }
@@ -76,12 +95,12 @@ public class Dog : Pets
     public override void Givename(string Name)
     {
         this.Name = Name;
-        Console.WriteLine(this.Animal + "'s name is now " + this.Name);
+        Console.WriteLine(this.Animal + "'s name is now " + this);
     }
 
     public override void TalkToOwner()
     {
-        Console.WriteLine(this.Name + " barked at owner");
+        Console.WriteLine(this + " barked at owner");
     }
 }
 public class Bird : Pets
@@ -95,10 +114,10 @@ public class Bird : Pets
     public override void Givename(string Name)
     {
         this.Name = Name;
-        Console.WriteLine(this.Animal + "'s name is now " + this.Name);
+        Console.WriteLine(this.Animal + "'s name is now " + this);
     }
     public override void TalkToOwner()
     {
-        Console.WriteLine(this.Name + " tweeted at owner");
+        Console.WriteLine(this + " tweeted at owner");
     }
 }
