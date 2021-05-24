@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using ConsoleApp_2;
 
 namespace ConsoleApp_2
@@ -59,7 +59,7 @@ namespace ConsoleApp_2
             //Animal makes one of the sounds in array "sounds".
             Random rnd = new Random();
             string sound = sounds[rnd.Next(this.sounds.Length)];
-            Console.WriteLine("\n" + Animal + " " + sound + ".");
+            Console.WriteLine("\n" + this + " " + sound + ".");
         }
     }
     // cat class inheriting from pets

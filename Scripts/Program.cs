@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -100,10 +100,10 @@ namespace ConsoleApp_2
 
                                         else if (input4 == 5)
                                         {
-                                            Console.WriteLine("\nGive name for " + pets[3 - 1] + "\n");
+                                            Console.WriteLine("\nGive name for " + pets[input3 - 1] + "\n");
                                             string name = Console.ReadLine();
                                             Console.WriteLine();
-                                            pets[3 - 1].Givename(name);
+                                            pets[input3 - 1].Givename(name);
                                         }
 
                                         else if (input4 == 6)
