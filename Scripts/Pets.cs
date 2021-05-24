@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using ConsoleApp_2;
 
 namespace ConsoleApp_2
