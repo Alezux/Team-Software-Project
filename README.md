@@ -13,11 +13,11 @@ Pets have following actions to be chosen: eat, talk to owner, make sound, come h
 Wild animals have actions make sound and hunt. Make sound works same as with pets and hunt would let animal to find food with 60% chance. If it does find food user would get description of an-imal finding food and gaining random amount of mass and how much it weighs now.  
 
 Folder structure:  
-TEAM-SOFTWARE-PROJECT
-├───README.md
-│
-└───Scripts
-    ├───ConsoleApp2.csproj
-    ├───Pets.cs
-    ├───Program.cs
-    └───WildAnimal.cs
+TEAM-SOFTWARE-PROJECT  
+├───README.md  
+│  
+└───Scripts  
+    ├───ConsoleApp2.csproj  
+    ├───Pets.cs  
+    ├───Program.cs  
+    └───WildAnimal.cs  
