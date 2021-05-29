@@ -18,7 +18,7 @@ TEAM-SOFTWARE-PROJECT
 │  
 └───Scripts<br />
       ├───ConsoleApp2.csproj  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├───Pets.cs  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├───Program.cs  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└───WildAnimal.cs  
+      ├───Pets.cs  
+      ├───Program.cs  
+      └───WildAnimal.cs  
       
