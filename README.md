@@ -14,9 +14,9 @@ Wild animals have actions make sound and hunt. Make sound works same as with pet
 
 Folder structure:  
 Team-Software-Project  
--Scripts  
---ConsoleApp2.csproj  
---Pets.cs  
---Program.cs  
---WildAnimal.cs  
--README.md  
+|--Scripts  
+|  |--ConsoleApp2.csproj  
+|  |--Pets.cs  
+|  |--Program.cs  
+|  |--WildAnimal.cs  
+|--README.md  
