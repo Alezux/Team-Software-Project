@@ -16,9 +16,9 @@ Folder structure:
 TEAM-SOFTWARE-PROJECT  
 ├───README.md  
 │  
-└───Scripts<br />
-      ├───ConsoleApp2.csproj  
-      ├───Pets.cs  
-      ├───Program.cs  
-      └───WildAnimal.cs  
+└───Scripts  
+            ├───ConsoleApp2.csproj  
+            ├───Pets.cs  
+            ├───Program.cs  
+            └───WildAnimal.cs  
       
