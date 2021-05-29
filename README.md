@@ -17,7 +17,7 @@ TEAM-SOFTWARE-PROJECT
 ├───README.md  
 │  
 └───Scripts  
-    ├───ConsoleApp2.csproj  
-    ├───Pets.cs  
-    ├───Program.cs  
-    └───WildAnimal.cs  
+&nbsp;├───ConsoleApp2.csproj  
+&nbsp;├───Pets.cs  
+&nbsp;├───Program.cs  
+&nbsp;└───WildAnimal.cs  
